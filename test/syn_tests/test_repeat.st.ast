@@ -1,0 +1,23 @@
+          AST          
+           |           
+      test_repeat      
+           |           
+    ------------       
+   /            \      
+LocalVar      Block    
+   |            |      
+ i:INT        Repeat   
+   |            |      
+  ----      -------    
+ /    \    /       \   
+Non  Non  OpEQ   Block 
+           |       |   
+           --    Assign
+          /  \     |   
+          i  4   ---   
+                /   \  
+                i  Plus
+                    |  
+                    -- 
+                   /  \
+                   i  1
